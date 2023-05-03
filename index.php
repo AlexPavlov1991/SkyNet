@@ -21,14 +21,6 @@ try {
     $tariff->setValidityPeriod("2023-05-02");
     $tariff->setSpeed(200);
     $tariff->setTariffType(TariffType::Archval);
-    
-    echo PHP_EOL
-        . "Название: " . $tariff->getName() . PHP_EOL
-        . "Стоимость: " . $tariff->getPrice() . " руб/мес" . PHP_EOL
-        . "Срок действия: до " . $tariff->getValidityPeriod() . PHP_EOL
-        . "Скорость: " . $tariff->getSpeed() . " Мбит/сек" . PHP_EOL
-        . "Тип тарифа: " . $tariff->getTariffType() . PHP_EOL
-    ;
 } catch (\Error $e) {
     echo "Error: " . $e->getMessage() . PHP_EOL;
 } catch (\Exception $e) {
